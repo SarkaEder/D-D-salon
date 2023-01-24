@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #FF8E9E;
+    --secondary-color: #1b1b1b;
+    --button-color: #FF597B;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/Poppins-Regular.ttf");
+}
+
+section {
+    padding: 5%;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1 rem 0 rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.links {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+}
+
+.links a {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo h1 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    font-family: "poppins", sans-serif;
+}
+
+.front-page {
+    min-height: 100vh;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.selling-point {
+    margin-top: 25vh;
+    font-family: "poppins", sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+    text-align: center;
+}
+
+.selling-point h3 {
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+    margin-top: 2rem;
+}
+
+.ctas button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.29);
+    margin: 1rem;
+}
+
+.cta-main {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.cta-main a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.cta-sec {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cta-sec a {
+    text-decoration: none;
+    color: white
+}
+
+.salon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.dd {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "poppins", sans-serif;
+}
+
+.dd h2 {
+    padding-bottom: 1rem;
+}
+
+.sluzby img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 3.5rem;
+}
+
+.kadernictvi,
+.kosmetika,
+.mani {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* 3 images
+*/
+
+.sluzby h3 {
+    position: absolute;
+    color: var(--main-color);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.49);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+}
+
+.about {
+    color: var(--secondary-color);
+}
+
+.about h2 {
+    font-family: "poppins" sans-serif;
+    text-align: center;
+}
+
+.about p {
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.our-story a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0% 0%;
+    }
+
+    .sluzby {
+        display: flex;
+        gap: 2rem;
+        padding: 0% 10%;
+    }
+
+    .about {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        padding: 0% 10%;
+        padding-bottom: 5rem;
+    }
+
+    .about img {
+        width: 50%
+    }
+
+    .about h2 {
+        text-align: start;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.elfsight-app-56bf4e76-85dc-4799-8fa6-c051b67bb923 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
